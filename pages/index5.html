@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Title</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a href="../index.html" class="header__logo logo">
+      <img src="../images/logo.svg" alt="market" class="logo__image" width="134px" height="37px" loading="lazy">
+    </a>
+    <nav class="header__menu hidden-mobile">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="../index.html" class="header__menu-link">Домой</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="/" class="header__menu-link">Купить</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="/" class="header__menu-link">Новости</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="/" class="header__menu-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__button basket" type="button">
+      <img src="../images/basket.svg" alt="basket" class="button__image" width="25px" height="25px">
+    </button>
+    <button class="header___burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+      <span class="visually-hidden">Open navigation menu</span>
+    </button>
+  </div>
+</header>
+<main class="content">
+  <section class="section-flex container">
+    <section class="about">
+      <p class="about__text"> <a href="../index.html" class="about__link">Домашняя страница</a> / Empire</p>
+      <h1 class="about__title">empires.com</h1>
+      <div class="slider-container">
+        <div class="slider">
+          <img src="../images/empire/emp-1.png" alt="">
+          <img src="../images/empire/emp-2.png" alt="">
+          <img src="../images/empire/emp-3.png" alt="">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+      </div>
+      <h3 class="about__title">О продукте</h3>
+      <div class="about__description">
+        <p>Empire — это оригинальная торговая площадка веб-сайтов; покупайте, продавайте и просматривайте тысячи веб-сайтов, выставленных на продажу. Станьте предпринимателем сегодня.
+          Думаете продать? Оцените ценность своего веб-сайта с помощью реальных рыночных данных и тысяч сопоставимых продаж </p>
+      </div>
+    </section>
+    <section class="buy">
+      <h3 class="buy__title">Начать торги</h3>
+      <div class="buy__description">
+        <p>Сделка безопасна 100%</p>
+      </div>
+      <div class="buy__flex-container">
+        <h3 class="buy__title">Цена: </h3>
+        <h2 class="buy__title">700 000₽</h2>
+      </div>
+      <button class="buy__button button">Купить</button>
+      <h2 class="buy__title">О владельце</h2>
+      <img src="../images/empire/emp-avatar.jpg" alt="" class="buy__image" width="72px" height="72px" loading="lazy">
+      <span><h3 class="buy__title flexfix">Екатирина Крей</h3>Владелец сайта</span>
+      <div class="buy__description">
+        <p>Все наши сайты проходят тщательную проверку на соответствие стандартам качества</p>
+      </div>
+    </section>
+  </section>
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__right">
+        <a href="/" class="footer__logo logo">
+          <img src="../images/logo.svg" alt="market" class="logo__image" width="134px" height="37px" loading="lazy">
+        </a>
+        <div class="footer__description">
+          <p>Copyright © Market</p>
+        </div>
+      </div>
+      <div class="footer__left">
+        <h3 class="footer__title">Меню</h3>
+        <div class="footer__description-flex-container">
+          <a href="/" class="footer__link">
+            <p>Страницы</p>
+          </a>
+          <a href="/" class="footer__link">
+            <p>Новости</p>
+          </a>
+          <a href="/" class="footer__link">
+            <p>Поддержка</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer__icons">
+        <a href="/" class="footer__links">
+          <img src="../images/telegram.png" alt="" class="footer__image" width="32px" height="32px">
+        </a>
+        <a href="/" class="footer__links">
+          <img src="../images/vk.png" alt="" class="footer__image" width="32px" height="32px">
+        </a>
+        <a href="/" class="footer__links">
+          <img src="../images/github.png" alt="" class="footer__image" width="32px" height="32px">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
+        <span class="visually_hidden"></span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a href="" class="mobile-overlay__link">Купить</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="" class="mobile-overlay__link">Новости</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="" class="mobile-overlay__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+  <script src="../scripts/slider.js"></script>
+</main>
+</body>
+</html>

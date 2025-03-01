@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Title</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="./index.html" class="header__logo logo">
+                <img src="./images/logo.svg" alt="market" class="logo__image" width="134px" height="37px" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Купить</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Новости</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button basket" type="button">
+                <img src="./images/basket.svg" alt="basket" class="button__image" width="25px" height="25px">
+            </button>
+            <button class="header___burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="section container">
+            <div class="section__body"> <!--  основная часть секции, контент разный-->
+                <div class="start">
+                    <div class="start__main hidden">
+                        <div class="start__body"><!-- ограничеваем текст от фото -->
+                            <h1 class="start__title">Добро пожаловать на VH market — ваш идеальный партнер в мире онлайн-бизнеса!</h1>
+                            <div class="start__description">
+                                <p>Мы предлагаем уникальную возможность для предпринимателей и инвесторов — купить готовые сайты, которые специализируются на продаже сайтов. Наши платформы являются высококачественными, проверенными и готовы к запуску, что позволяет вам сразу же начать зарабатывать на продаже интернет-ресурсов.</p><!-- без класса для CMS -->
+                            </div>
+                            <a href="#yakor" class="start__link">
+                                <button class="start__button button" type="button">купить</button>
+                            </a>
+                        </div>
+                        <img src="./images/start-image.png" alt="" class="start__image" width="400px" height="400px">
+                    </div>
+<!--                <div class="start__partners"> здесь дополнительная часть</div>-->
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <header class="cards-section__header">
+                <div class="cards-section__flex-container">
+                    <a href="/" id="yakor">
+                        <h2 class="section__title">Товары</h2>
+                    </a>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropdown__button button">Фильтры</button>
+                        <div class="dropdown__menu" id ="dropdown__menu">
+                            <a href="" class="dropdown__link">По возрастанию</a>
+                            <a href="" class="dropdown__link">По убыванию</a>
+                            <a href="" class="dropdown__link">По кайфу</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="section__body">
+                <div class="goods">
+                    <div class="goods__item">
+                        <img src="./images/flippa/flippa-1.png" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Flippa</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/goods__avatar.png" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Алекс Ванеров</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index2.html" class="goods__link">
+                            <button class="goods__button button">150 000 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/godaddy/gd-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">godaddy</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/godaddy/gd-avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Антон Пореньяс</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index3.html" class="goods__link">
+                            <button class="goods__button button">250 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/namecheap/namech-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Namecheap</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/namecheap/namech-avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Сергей Сюрунотанзаки</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index4.html" class="goods__link">
+                            <button class="goods__button button">1 000 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/empire/emp-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Empire</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/empire/emp-avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Екатирина Крей</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index5.html" class="goods__link">
+                            <button class="goods__button button">700 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/envato/envato-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Entavo</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/goods__avatar.png" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Максим Дионидов</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index6.html" class="goods__link">
+                            <button class="goods__button button">999 999₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/creative-market/cm-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Creativemarket</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/creative-market/avatar.avif" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Иван Донилов</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index7.html" class="goods__link">
+                            <button class="goods__button button">20 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/tilda/tilda-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Tilda</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/tilda/avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Третьякова Мария</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index8.html" class="goods__link">
+                            <button class="goods__button button">22 000 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/shopify/sh-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">Shopify</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/shopify/sh-avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Ольга Валентиновна</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index9.html" class="goods__link">
+                            <button class="goods__button button">30 000 000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/drible/dr-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">drible</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/drible/dr-avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Андрей Бессмертный</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index10.html" class="goods__link">
+                            <button class="goods__button button">3000₽</button>
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <img src="./images/hubstop.com/hs-1.png" alt="" class="goods__image" width="300px" height="230px">
+                        <h3 class="goods__title">hubstop</h3>
+                        <div class="goods__one-line">
+                            <img src="./images/hubstop.com/hs-avatar.jpg" alt="" class="goods__avatar" width="32px" height="23px">
+                            <div class="goods__name">
+                                <p>Андрей Колобков</p>
+                            </div>
+                        </div>
+                        <a href="./pages/index11.html" class="goods__link">
+                            <button class="goods__button button">200 000₽</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="section__title">
+                <div class="comment">
+                    <h2 class="comment__title">
+                        Отзывы
+                    </h2>
+                    <div class="comment__about comment__margin">
+                        <p>Отзывы наших клиентов после покупки</p>
+                    </div>
+                </div>
+            </div>
+            <section class="section__body">
+                <div class="comment">
+                    <div class="comment__body">
+                        <div class="comment__item">
+                            <div class="comment__flex--center">
+                                <img src="./images/comment1.webp" alt="" class="comment__image" width="40px" height="40px">
+                                <h3 class="comment__title">Пантелей Шабков</h3>
+                            </div>
+                            <div class="comment__about">
+                                <p>Все быстро и безопастно</p>
+                            </div>
+                            <div class="comment__stars">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <div class="comment__flex--center">
+                                <img src="./images/linkol.png" alt="" class="comment__image" width="40px" height="40px">
+                                <h3 class="comment__title">Авраам Линкольн</h3>
+                            </div>
+                            <div class="comment__about">
+                                <p>best market in the world</p>
+                            </div>
+                            <div class="comment__stars">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <div class="comment__flex--center">
+                                <img src="./images/kakoytokitayec.png" alt="" class="comment__image" width="40px" height="40px">
+                                <h3 class="comment__title">Какой то китаец</h3>
+                            </div>
+                            <div class="comment__about">
+                                <p>最好的網站</p>
+                            </div>
+                            <div class="comment__stars">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                            </div>
+                        </div>
+                        <div class="comment__item">
+                            <div class="comment__flex--center">
+                                <img src="./images/pety.png" alt="" class="comment__image" width="40px" height="40px">
+                                <h3 class="comment__title">Игнасио Карсья</h3>
+                            </div>
+                            <div class="comment__about">
+                                <p>Отличные сайты, по выгодным ценам</p>
+                            </div>
+                            <div class="comment__stars">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                                <img src="./images/star.png" alt="" class="comment__stars--img" width="24px" height="24px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__right">
+                <a href="/" class="footer__logo logo">
+                    <img src="./images/logo.svg" alt="market" class="logo__image" width="134px" height="37px" loading="lazy">
+                </a>
+                <div class="footer__description">
+                    <p>Copyright © Market</p>
+                </div>
+            </div>
+            <div class="footer__left">
+                <h3 class="footer__title">Меню</h3>
+                <div class="footer__description-flex-container">
+                    <a href="/" class="footer__link">
+                        <p>Страницы</p>
+                    </a>
+                    <a href="/" class="footer__link">
+                        <p>Новости</p>
+                    </a>
+                    <a href="/" class="footer__link">
+                        <p>Поддержка</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__icons">
+                <a href="/" class="footer__links">
+                    <img src="./images/telegram.png" alt="" class="footer__image" width="32px" height="32px">
+                </a>
+                <a href="/" class="footer__links">
+                    <img src="./images/vk.png" alt="" class="footer__image" width="32px" height="32px">
+                </a>
+                <a href="/" class="footer__links">
+                    <img src="./images/github.png" alt="" class="footer__image" width="32px" height="32px">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually_hidden"></span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="" class="mobile-overlay__link">Категории</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="" class="mobile-overlay__link">Страницы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="" class="mobile-overlay__link">Популярное</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="" class="mobile-overlay__link">Последние</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+    <script src="./scripts/observer.js"></script>
+    <script src="./scripts/dropdown-menu.js"></script>
+</body>
+</html>
